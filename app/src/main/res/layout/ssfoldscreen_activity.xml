@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/ssfoldscreen_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ssfoldscreen_margin_16dp"
+        android:layout_marginTop="@dimen/ssfoldscreen_margin_16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toTopOf="0"
+        app:srcCompat="@drawable/ssfoldscreen_back" />
+
+    <ImageButton
+        android:id="@+id/ssfoldscreen_back_ripple"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bottomnav_circle_ripple"
+        android:onClick="finishActivity"
+        app:layout_constraintBottom_toBottomOf="@+id/ssfoldscreen_back"
+        app:layout_constraintEnd_toEndOf="@+id/ssfoldscreen_back"
+        app:layout_constraintStart_toStartOf="@+id/ssfoldscreen_back"
+        app:layout_constraintTop_toTopOf="@+id/ssfoldscreen_back" />
+
+    <TextView
+        android:id="@+id/ssfoldscreen_title"
+        style="@style/ssfoldscreen_top_img_style"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="AS_03022021_1323_1325"
+        app:layout_constraintBottom_toBottomOf="@+id/ssfoldscreen_back"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toTopOf="@+id/ssfoldscreen_back" />
+
+    <ImageButton
+        android:id="@+id/ssfoldscreen_edit"
+        android:layout_width="@dimen/ssfoldscreen_top_img_width_height"
+        android:layout_height="@dimen/ssfoldscreen_top_img_width_height"
+        android:layout_marginStart="@dimen/ssfoldscreen_margin_8dp"
+        android:background="@drawable/bottomnav_circle_ripple"
+        android:onClick="edit_name_alert_dialog"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/ssfoldscreen_title"
+        app:layout_constraintStart_toEndOf="@+id/ssfoldscreen_title"
+        app:layout_constraintTop_toTopOf="@+id/ssfoldscreen_title"
+        app:srcCompat="@drawable/edit_icon" />
+
+    <ImageButton
+        android:id="@+id/ssfoldscreen_delete_all"
+        android:layout_width="@dimen/ssfoldscreen_mid_panel_width_height"
+        android:layout_height="@dimen/ssfoldscreen_mid_panel_width_height"
+        android:background="@drawable/ssfoldscreen_mid_panel_square_ripple"
+        android:onClick="deleteSelected"
+        android:scaleType="center"
+        app:layout_constraintEnd_toStartOf="@+id/ssfoldscreen_select_all"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toTopOf="@+id/ssfoldscreen_select_all"
+        app:srcCompat="@drawable/foldscreen_delete_selected" />
+
+    <ImageButton
+        android:id="@+id/ssfoldscreen_select_all"
+        android:layout_width="@dimen/ssfoldscreen_mid_panel_width_height"
+        android:layout_height="@dimen/ssfoldscreen_mid_panel_width_height"
+        android:layout_marginTop="@dimen/ssfoldscreen_mid_panel_dist_from_top"
+        android:onClick="selectAll"
+        app:layout_constraintEnd_toStartOf="@+id/ssfoldscreen_export"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ssfoldscreen_delete_all"
+        app:layout_constraintTop_toBottomOf="@+id/ssfoldscreen_title"
+        app:srcCompat="@drawable/homescreen_checkbox_panel_select_all" />
+
+    <ImageButton
+        android:id="@+id/ssfoldscreen_export"
+        android:layout_width="@dimen/ssfoldscreen_mid_panel_width_height"
+        android:layout_height="@dimen/ssfoldscreen_mid_panel_width_height"
+        android:background="@drawable/ssfoldscreen_mid_panel_square_ripple"
+        android:onClick="export_selected"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ssfoldscreen_select_all"
+        app:layout_constraintTop_toTopOf="@+id/ssfoldscreen_select_all"
+        app:srcCompat="@drawable/foldscreen_export" />
+
+    <TextView
+        android:id="@+id/ssfoldscreen_delete_all_text"
+        style="@style/ssfoldscreen_mid_panel_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ssfoldscreen_delete_slected"
+        app:layout_constraintEnd_toEndOf="@+id/ssfoldscreen_delete_all"
+        app:layout_constraintStart_toStartOf="@+id/ssfoldscreen_delete_all"
+        app:layout_constraintTop_toBottomOf="@+id/ssfoldscreen_delete_all" />
+
+    <TextView
+        android:id="@+id/ssfoldscreen_select_all_text"
+        style="@style/ssfoldscreen_mid_panel_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ssfoldscreen_select_all"
+        app:layout_constraintEnd_toEndOf="@+id/ssfoldscreen_select_all"
+        app:layout_constraintStart_toStartOf="@+id/ssfoldscreen_select_all"
+        app:layout_constraintTop_toBottomOf="@+id/ssfoldscreen_select_all" />
+
+    <TextView
+        android:id="@+id/ssfoldscreen_export_text"
+        style="@style/ssfoldscreen_mid_panel_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ssfoldscreen_export_images"
+        app:layout_constraintEnd_toEndOf="@+id/ssfoldscreen_export"
+        app:layout_constraintStart_toStartOf="@+id/ssfoldscreen_export"
+        app:layout_constraintTop_toBottomOf="@+id/ssfoldscreen_export" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ssfoldscreen_rv"
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:layout_marginStart="@dimen/ssfoldscreen_margin_16dp"
+        android:layout_marginTop="@dimen/ssfoldscreen_margin_16dp"
+        android:layout_marginEnd="@dimen/ssfoldscreen_margin_16dp"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toBottomOf="@+id/ssfoldscreen_select_all_text" />
+
+    <ImageView
+        android:id="@+id/ssfoldscreen_bottom_blur"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="0"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintStart_toStartOf="0"
+        app:srcCompat="@drawable/ssfoldscreen_bottom_blur" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ssfoldscreen_add_imgs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="openBottomSheet"
+        app:layout_constraintBottom_toTopOf="@+id/ssfoldscreen_bottom_blur"
+        app:layout_constraintEnd_toStartOf="@+id/ssfoldscreen_process"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toTopOf="@+id/ssfoldscreen_bottom_blur"
+        app:srcCompat="@drawable/settingscreen_plus" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ssfoldscreen_process"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="processImagesDialog"
+        app:layout_constraintBottom_toTopOf="@+id/ssfoldscreen_bottom_blur"
+        app:layout_constraintEnd_toStartOf="@+id/ssfoldscreen_create_pdf"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ssfoldscreen_add_imgs"
+        app:layout_constraintTop_toTopOf="@+id/ssfoldscreen_bottom_blur"
+        app:srcCompat="@drawable/foldscreen_process" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ssfoldscreen_create_pdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="createPDFDialog"
+        app:layout_constraintBottom_toTopOf="@+id/ssfoldscreen_bottom_blur"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ssfoldscreen_process"
+        app:layout_constraintTop_toTopOf="@+id/ssfoldscreen_bottom_blur"
+        app:srcCompat="@drawable/filescreen_pdf_icon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

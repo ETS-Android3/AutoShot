@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/overlayscreen_interval_change_dialog_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toTopOf="0"
+        app:srcCompat="@drawable/overlayscreen_pp3" />
+
+    <TextView
+        android:id="@+id/overlayscreen_interval_change_dialog_heading"
+        style="@style/homescreen_cap_item_subheader_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/overlayscreen_interval_change_dialog_heading"
+        app:layout_constraintBottom_toTopOf="@+id/overlayscreen_time_interval"
+        app:layout_constraintEnd_toEndOf="@+id/overlayscreen_interval_change_dialog_bg"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/overlayscreen_interval_change_dialog_bg"
+        app:layout_constraintTop_toBottomOf="@+id/overlayscreen_interval_change_dialog_bg" />
+
+    <ImageButton
+        android:id="@+id/overlayscreen_interval_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/bottomnav_circle_ripple"
+        app:layout_constraintBottom_toBottomOf="@+id/overlayscreen_time_interval"
+        app:layout_constraintStart_toEndOf="@+id/overlayscreen_time_interval"
+        app:layout_constraintTop_toTopOf="@+id/overlayscreen_time_interval"
+        app:srcCompat="@drawable/settingscreen_plus" />
+
+    <TextView
+        android:id="@+id/overlayscreen_time_interval"
+        style="@style/homescreen_cap_item_subheader_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="120 seconds"
+        app:layout_constraintBottom_toTopOf="@+id/overlayscreen_interval_play"
+        app:layout_constraintEnd_toEndOf="@+id/overlayscreen_interval_change_dialog_bg"
+        app:layout_constraintStart_toStartOf="@+id/overlayscreen_interval_change_dialog_bg"
+        app:layout_constraintTop_toBottomOf="@+id/overlayscreen_interval_change_dialog_heading" />
+
+    <ImageButton
+        android:id="@+id/overlayscreen_interval_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bottomnav_circle_ripple"
+        app:layout_constraintBottom_toBottomOf="@+id/overlayscreen_time_interval"
+        app:layout_constraintEnd_toStartOf="@+id/overlayscreen_time_interval"
+        app:layout_constraintTop_toTopOf="@+id/overlayscreen_time_interval"
+        app:srcCompat="@drawable/settingscreen_minus" />
+
+    <ImageButton
+        android:id="@+id/overlayscreen_interval_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bottomnav_circle_ripple"
+        app:layout_constraintBottom_toTopOf="@+id/overlayscreen_interval_change_dialog_bg"
+        app:layout_constraintEnd_toEndOf="@+id/overlayscreen_interval_change_dialog_bg"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/overlayscreen_interval_change_dialog_bg"
+        app:layout_constraintTop_toBottomOf="@+id/overlayscreen_time_interval"
+        app:srcCompat="@drawable/overlayscreen_play" />
+</androidx.constraintlayout.widget.ConstraintLayout>

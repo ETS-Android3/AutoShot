@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/pref_crop_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/preferencesscreen_item_height"
+        android:layout_marginStart="@dimen/preferencesscreen_margin_LR"
+        android:layout_marginTop="@dimen/preferencesscreen_margin_Top"
+        android:layout_marginEnd="@dimen/preferencesscreen_margin_LR"
+        android:layout_marginBottom="@dimen/preferencesscreen_margin_Bottom"
+        app:layout_constraintBottom_toBottomOf="0"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toTopOf="0"
+        app:srcCompat="@drawable/homescreen_rv_item_bg" />
+
+    <ImageButton
+        android:id="@+id/pref_crop_bg_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/preferencesscreen_item_height"
+        android:layout_marginStart="@dimen/preferencesscreen_margin_LR"
+        android:layout_marginTop="@dimen/preferencesscreen_margin_Top"
+        android:layout_marginEnd="@dimen/preferencesscreen_margin_LR"
+        android:layout_marginBottom="@dimen/preferencesscreen_margin_Bottom"
+        android:background="@drawable/ssfoldscreen_mid_panel_square_ripple"
+        app:layout_constraintBottom_toBottomOf="0"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toTopOf="0" />
+
+    <TextView
+        android:id="@+id/preferencesscreen_crop_info"
+        style="@style/preferencesscreen_item_style"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/preferencesscreen_crop_info"
+        app:layout_constraintBottom_toTopOf="@+id/preferencesscreen_crop_mode"
+        app:layout_constraintEnd_toEndOf="@+id/pref_crop_bg"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/pref_crop_bg"
+        app:layout_constraintTop_toTopOf="@+id/pref_crop_bg" />
+
+    <TextView
+        android:id="@+id/preferencesscreen_crop_mode"
+        style="@style/homescreen_cap_item_subheader_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/preferencesscreen_default_crop_mode"
+        app:layout_constraintBottom_toBottomOf="@+id/pref_crop_bg"
+        app:layout_constraintEnd_toEndOf="@+id/preferencesscreen_crop_info"
+        app:layout_constraintStart_toStartOf="@+id/preferencesscreen_crop_info"
+        app:layout_constraintTop_toBottomOf="@+id/preferencesscreen_crop_info" />
+
+    <ImageView
+        android:id="@+id/preferencesscreen_crop_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/preferencesscreen_margin_LR"
+        app:layout_constraintBottom_toBottomOf="@+id/pref_crop_bg"
+        app:layout_constraintStart_toStartOf="@+id/pref_crop_bg"
+        app:layout_constraintTop_toTopOf="@+id/pref_crop_bg"
+        app:layout_constraintVertical_bias="0.75"
+        app:srcCompat="@drawable/overlayscreen_expand_panel_crop" />
+</androidx.constraintlayout.widget.ConstraintLayout>

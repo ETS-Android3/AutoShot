@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ssfoldscreen_img_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ssfoldscreen_imgitem_bg"
+        android:layout_width="@dimen/ssfoldsreen_width_height"
+        android:layout_height="@dimen/ssfoldsreen_width_height"
+        android:layout_marginStart="@dimen/ssfoldscreen_imgitem_margin"
+        android:layout_marginTop="@dimen/ssfoldscreen_imgitem_margin"
+        android:layout_marginEnd="@dimen/ssfoldscreen_imgitem_margin"
+        android:layout_marginBottom="@dimen/ssfoldscreen_imgitem_margin"
+        app:layout_constraintBottom_toBottomOf="0"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toTopOf="0"
+        app:srcCompat="@drawable/homescreen_rv_item_bg" />
+
+    <CheckBox
+        android:id="@+id/ssfoldscreen_imgitem_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/checkbox_color"
+        android:translationX="@dimen/ssfoldscreen_imgitem_checkbox_transX"
+        app:layout_constraintBottom_toBottomOf="@+id/ssfoldscreen_imgitem_num_bg"
+        app:layout_constraintEnd_toEndOf="@+id/ssfoldscreen_imgitem_bg"
+        app:layout_constraintTop_toTopOf="@+id/ssfoldscreen_imgitem_num_bg" />
+
+    <ImageView
+        android:id="@+id/ssfoldscreen_imgitem_num_bg"
+        android:layout_width="@dimen/ssfoldscreen_imgitem_top_num_bg_width"
+        android:layout_height="@dimen/ssfoldscreen_imgitem_top_num_bg_height"
+        app:layout_constraintStart_toStartOf="@+id/ssfoldscreen_imgitem_bg"
+        app:layout_constraintTop_toTopOf="@+id/ssfoldscreen_imgitem_bg"
+        app:srcCompat="@drawable/ssfoldscreen_imgitem_num_bg" />
+
+    <TextView
+        android:id="@+id/ssfoldscreen_imgitem_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="@color/ssfoldscreen_imgitem_num_color"
+        app:layout_constraintBottom_toBottomOf="@+id/ssfoldscreen_imgitem_num_bg"
+        app:layout_constraintEnd_toEndOf="@+id/ssfoldscreen_imgitem_num_bg"
+        app:layout_constraintStart_toStartOf="@+id/ssfoldscreen_imgitem_num_bg"
+        app:layout_constraintTop_toTopOf="@+id/ssfoldscreen_imgitem_num_bg" />
+
+    <ImageView
+        android:id="@+id/ssfoldscreen_imgitem_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/ssfoldscreen_imgitem_bg"
+        app:layout_constraintEnd_toEndOf="@+id/ssfoldscreen_imgitem_bg"
+        app:layout_constraintStart_toStartOf="@+id/ssfoldscreen_imgitem_bg"
+        app:layout_constraintTop_toTopOf="@+id/ssfoldscreen_imgitem_bg"
+        app:layout_constraintVertical_bias="0.63"
+        app:srcCompat="@drawable/capturescreen_jpg_icon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

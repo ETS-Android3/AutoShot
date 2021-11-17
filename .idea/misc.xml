@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/GCode/AutoShot/app/src/main/res/layout/activity_main.xml" value="0.2767210144927536" />
+        <entry key="..\:/GCode/AutoShot/app/src/main/res/layout/homescreen_activity.xml" value="0.3625" />
+        <entry key="..\:/GCode/AutoShot/app/src/main/res/layout/homescreen_activity_checkbox_panel.xml" value="0.3625" />
+        <entry key="..\:/GCode/AutoShot/app/src/main/res/layout/overlayscreen_activity_drag_panel.xml" value="0.3625" />
+        <entry key="..\:/GCode/AutoShot/app/src/main/res/layout/overlayscreen_activity_expand_panel.xml" value="0.3625" />
+        <entry key="..\:/GCode/AutoShot/app/src/main/res/layout/overlayscreen_activity_interval_change_dialog.xml" value="0.3625" />
+        <entry key="..\:/GCode/AutoShot/app/src/main/res/layout/overlayscreen_activity_preview.xml" value="0.3625" />
+        <entry key="..\:/GCode/AutoShot/app/src/main/res/layout/overlayscreen_activity_time_interval.xml" value="0.3625" />
+        <entry key="..\:/GCode/AutoShot/app/src/main/res/layout/preferencesscreen_activity_autoss2pdf.xml" value="0.3625" />
+        <entry key="..\:/GCode/AutoShot/app/src/main/res/layout/preferencesscreen_activity_crop.xml" value="0.3625" />
+        <entry key="..\:/GCode/AutoShot/app/src/main/res/layout/preferencesscreen_activity_crop_view.xml" value="0.3625" />
+        <entry key="..\:/GCode/AutoShot/app/src/main/res/layout/preferencesscreen_activity_ssdelexport.xml" value="0.3625" />
+        <entry key="..\:/GCode/AutoShot/app/src/main/res/layout/processpreviewscreen_activity.xml" value="0.3625" />
+        <entry key="..\:/GCode/AutoShot/app/src/main/res/layout/processpreviewscreen_activity_sort_list_item.xml" value="0.3625" />
+        <entry key="..\:/GCode/AutoShot/app/src/main/res/layout/ssfoldscreen_activity_bottomsheet.xml" value="0.3625" />
+        <entry key="..\:/GCode/AutoShot/app/src/main/res/layout/ssfoldscreen_activity_process_progress.xml" value="0.36268890046899427" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

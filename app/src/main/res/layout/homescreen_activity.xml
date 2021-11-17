@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageButton
+        android:id="@+id/homescreen_as_icon"
+        android:layout_width="30dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bottomnav_circle_ripple"
+        app:layout_constraintBottom_toBottomOf="@+id/homescreen_one_liner"
+        app:layout_constraintEnd_toStartOf="@+id/homescreen_title"
+        app:layout_constraintTop_toTopOf="@+id/homescreen_title"
+        app:layout_constraintVertical_bias="0.32"
+        app:srcCompat="@drawable/autoshot_icon" />
+
+    <TextView
+        android:id="@+id/homescreen_title"
+        style="@style/homescreen_title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/app_name"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toTopOf="0" />
+
+    <TextView
+        android:id="@+id/homescreen_one_liner"
+        style="@style/homescreen_cap_item_subheader_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotoslab_regular"
+        android:text="@string/one_liner"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintStart_toStartOf="@+id/homescreen_title"
+        app:layout_constraintTop_toBottomOf="@+id/homescreen_title" />
+
+    <ImageButton
+        android:id="@+id/homescreen_settings"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="@dimen/homescreen_rv_marginLR"
+        android:background="@drawable/bottomnav_circle_ripple"
+        android:onClick="launchPreferencesScreen"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/homescreen_one_liner"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintTop_toTopOf="0"
+        app:srcCompat="@drawable/settings_icon" />
+
+    <TextView
+        android:id="@+id/homescreen_heading"
+        style="@style/homescreen_cap_item_subheader_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/cap_info"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toBottomOf="@+id/homescreen_one_liner" />
+
+    <ImageButton
+        android:id="@+id/homescreen_top_panel_fold_up"
+        android:layout_width="@dimen/homescreen_top_panel_icon_size"
+        android:layout_height="@dimen/homescreen_top_panel_icon_size"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/bottomnav_circle_ripple"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toTopOf="@+id/homescreen_top_panel_create_fold"
+        app:srcCompat="@drawable/homescreen_top_panel_fold_up" />
+
+    <ImageButton
+        android:id="@+id/homescreen_top_panel_refresh"
+        android:layout_width="@dimen/homescreen_top_panel_icon_size"
+        android:layout_height="@dimen/homescreen_top_panel_icon_size"
+        android:background="@drawable/bottomnav_circle_ripple"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/homescreen_top_panel_fold_up"
+        app:layout_constraintEnd_toStartOf="@+id/homescreen_top_panel_create_fold"
+        app:layout_constraintStart_toEndOf="@+id/homescreen_top_panel_fold_up"
+        app:layout_constraintTop_toTopOf="@+id/homescreen_top_panel_fold_up"
+        app:srcCompat="@drawable/homescreen_top_panel_refresh" />
+
+    <ImageButton
+        android:id="@+id/homescreen_top_panel_create_fold"
+        android:layout_width="@dimen/homescreen_top_panel_icon_size"
+        android:layout_height="@dimen/homescreen_top_panel_icon_size"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bottomnav_circle_ripple"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintTop_toBottomOf="@+id/homescreen_heading"
+        app:srcCompat="@drawable/homescreen_top_panel_create_fold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/homescreen_rv_cap"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:layout_marginStart="@dimen/homescreen_rv_marginLR"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/homescreen_rv_marginLR"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toBottomOf="@+id/homescreen_top_panel_fold_up" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/homescreen_rv_files"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:layout_marginStart="@dimen/homescreen_rv_marginLR"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/homescreen_rv_marginLR"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toBottomOf="@+id/homescreen_top_panel_fold_up" />
+
+    <ImageView
+        android:id="@+id/homescreen_bottomnav_blur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="0"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintStart_toStartOf="0"
+        app:srcCompat="@drawable/bottomnav_blur" />
+
+    <ImageView
+        android:id="@+id/homescreen_bottomnav_bg"
+        android:layout_width="440dp"
+        android:layout_height="88dp"
+        android:scaleType="fitXY"
+        android:translationY="10dp"
+        app:layout_constraintBottom_toBottomOf="0"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintStart_toStartOf="0"
+        app:srcCompat="@drawable/bottomnav_select_cap_bg" />
+
+    <ImageView
+        android:id="@+id/homescreen_bottomnav_files_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="0"
+        app:layout_constraintEnd_toStartOf="@+id/homescreen_vertical_guide"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toTopOf="@+id/homescreen_bottomnav_bg"
+        app:srcCompat="@drawable/bottomnav_files_disabled_icon" />
+
+    <ImageButton
+        android:id="@+id/homescreen_bottomnav_files_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bottomnav_circle_ripple"
+        app:layout_constraintBottom_toBottomOf="@+id/homescreen_bottomnav_files_text"
+        app:layout_constraintEnd_toEndOf="@+id/homescreen_bottomnav_files_icon"
+        app:layout_constraintStart_toStartOf="@+id/homescreen_bottomnav_files_icon"
+        app:layout_constraintTop_toTopOf="@+id/homescreen_bottomnav_files_icon" />
+
+    <TextView
+        android:id="@+id/homescreen_bottomnav_files_text"
+        style="@style/homescreen_bottomnav_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Files"
+        android:textColor="@color/homescreen_bottomnav_inactive"
+        app:layout_constraintEnd_toEndOf="@+id/homescreen_bottomnav_files_icon"
+        app:layout_constraintStart_toStartOf="@+id/homescreen_bottomnav_files_icon"
+        app:layout_constraintTop_toBottomOf="@+id/homescreen_bottomnav_files_icon" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/homescreen_vertical_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/homescreen_bottomnav_cap_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/actionBarItemBackground"
+        app:layout_constraintBottom_toBottomOf="0"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toStartOf="@+id/homescreen_vertical_guide"
+        app:layout_constraintTop_toTopOf="@+id/homescreen_bottomnav_bg"
+        app:srcCompat="@drawable/bottomnav_captures_icon" />
+
+    <ImageButton
+        android:id="@+id/homescreen_bottomnav_cap_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bottomnav_circle_ripple"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/homescreen_bottomnav_cap_text"
+        app:layout_constraintEnd_toEndOf="@+id/homescreen_bottomnav_cap_icon"
+        app:layout_constraintStart_toStartOf="@+id/homescreen_bottomnav_cap_icon"
+        app:layout_constraintTop_toTopOf="@+id/homescreen_bottomnav_cap_icon" />
+
+    <TextView
+        android:id="@+id/homescreen_bottomnav_cap_text"
+        style="@style/homescreen_bottomnav_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Captures"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/homescreen_bottomnav_cap_icon"
+        app:layout_constraintStart_toStartOf="@+id/homescreen_bottomnav_cap_icon"
+        app:layout_constraintTop_toBottomOf="@+id/homescreen_bottomnav_cap_icon" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/homescreen_horizontal_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.83" />
+
+    <ImageView
+        android:id="@+id/homescreen_bottomnav_play_bg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toTopOf="@+id/homescreen_horizontal_guide"
+        app:srcCompat="@drawable/bottomnav_play_bg" />
+
+    <ImageButton
+        android:id="@+id/homescreen_bottomnav_play"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@drawable/bottomnav_circle_ripple"
+        android:onClick="launchOverlayScreen"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/homescreen_bottomnav_play_bg"
+        app:layout_constraintEnd_toEndOf="@+id/homescreen_bottomnav_play_bg"
+        app:layout_constraintStart_toStartOf="@+id/homescreen_bottomnav_play_bg"
+        app:layout_constraintTop_toTopOf="@+id/homescreen_bottomnav_play_bg"
+        app:srcCompat="@drawable/bottomnav_play" />
+
+    <include
+        android:id="@+id/homescreen_checkbox_panel"
+        layout="@layout/homescreen_activity_checkbox_panel"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="0"
+        app:layout_constraintEnd_toEndOf="@+id/homescreen_bottomnav_blur"
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toTopOf="@+id/homescreen_horizontal_guide" />
+
+    <TextView
+        android:id="@+id/homescreen_play_stop_ind_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="play"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/homescreen_rv_cap"
+        app:layout_constraintEnd_toEndOf="@+id/homescreen_bottomnav_play_bg" />
+</androidx.constraintlayout.widget.ConstraintLayout>

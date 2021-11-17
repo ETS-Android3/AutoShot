@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/overlayscreen_drag_panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/overlayscreen_drag_panel_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/overlayscreen_drag_panel_mid"
+        android:layout_alignTop="@+id/overlayscreen_drag_panel_mid"
+        android:layout_alignBottom="@+id/overlayscreen_drag_panel_mid"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/bottomnav_circle_ripple"
+        android:src="@drawable/overlayscreen_drag_panel_left" />
+
+    <ImageButton
+        android:id="@+id/overlayscreen_drag_panel_mid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/overlayscreen_drag_panel" />
+
+    <ImageButton
+        android:id="@+id/overlayscreen_drag_panel_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/overlayscreen_drag_panel_mid"
+        android:layout_alignEnd="@+id/overlayscreen_drag_panel_mid"
+        android:layout_alignBottom="@+id/overlayscreen_drag_panel_mid"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/bottomnav_circle_ripple"
+        android:src="@drawable/overlayscreen_drag_panel_left" />
+
+    <ImageButton
+        android:id="@+id/overlayscreen_drag_panel_expand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/overlayscreen_drag_panel_mid"
+        android:layout_alignBottom="@+id/overlayscreen_drag_panel_mid"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/overlayscreen_drag_panel_right"
+        android:layout_toEndOf="@+id/overlayscreen_drag_panel_left"
+        android:background="@drawable/bottomnav_circle_ripple"
+        android:src="@drawable/overlayscreen_drag_panel_expand" />
+
+    <ImageButton
+        android:id="@+id/overlayscreen_drag_panel_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/overlayscreen_drag_panel_left"
+        android:layout_alignTop="@+id/overlayscreen_drag_panel_left"
+        android:layout_alignEnd="@+id/overlayscreen_drag_panel_left"
+        android:layout_alignBottom="@+id/overlayscreen_drag_panel_left"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/bottomnav_circle_ripple"
+        android:src="@drawable/overlayscreen_drag_panel_capture" />
+
+    <TextView
+        android:id="@+id/overlayscreen_drag_panel_no_of_ss_tv"
+        style="@style/homescreen_cap_item_subheader_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/overlayscreen_drag_panel_right"
+        android:layout_alignTop="@+id/overlayscreen_drag_panel_right"
+        android:layout_alignEnd="@+id/overlayscreen_drag_panel_mid"
+        android:layout_alignBottom="@+id/overlayscreen_drag_panel_right"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/bottomnav_circle_ripple"
+        android:gravity="center"
+        android:text="0" />
+
+    <ImageView
+        android:id="@+id/overlayscreen_drag_panel_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/overlayscreen_drag_panel_mid"
+        android:layout_alignBottom="@+id/overlayscreen_drag_panel_mid"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/overlayscreen_drag_panel_mid"
+        android:src="@drawable/overlayscreen_drag_panel_drag_handle" />
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/overlayscreen_time_interval_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/overlayscreen_time_interval_panel" />
+
+    <TextView
+        android:id="@+id/overlayscreen_time_interval_heading"
+        style="@style/homescreen_cap_item_subheader_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/overlayscreen_time_interval_bg"
+        android:layout_alignTop="@+id/overlayscreen_time_interval_bg"
+        android:layout_alignEnd="@+id/overlayscreen_time_interval_bg"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:text="Take screenshots after every" />
+
+    <TextView
+        android:id="@+id/overlayscreen_time_interval_time"
+        style="@style/homescreen_cap_item_subheader_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/overlayscreen_time_interval_heading"
+        android:layout_alignStart="@+id/overlayscreen_time_interval_bg"
+        android:layout_alignEnd="@+id/overlayscreen_time_interval_bg"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:text="20 seconds" />
+
+    <ImageButton
+        android:id="@+id/overlayscreen_time_interval_minus"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/overlayscreen_time_interval_bg"
+        android:layout_alignTop="@+id/overlayscreen_time_interval_time"
+        android:layout_alignBottom="@+id/overlayscreen_time_interval_time"
+        android:layout_marginStart="@dimen/overlayscreen_time_interval_plus_minus_margin"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/bottomnav_circle_ripple"
+        android:src="@drawable/settingscreen_minus" />
+
+    <ImageButton
+        android:id="@+id/overlayscreen_time_interval_plus"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/overlayscreen_time_interval_time"
+        android:layout_alignEnd="@+id/overlayscreen_time_interval_bg"
+        android:layout_alignBottom="@+id/overlayscreen_time_interval_time"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="@dimen/overlayscreen_time_interval_plus_minus_margin"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/bottomnav_circle_ripple"
+        android:src="@drawable/settingscreen_plus" />
+
+    <ImageButton
+        android:id="@+id/overlayscreen_time_interval_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/overlayscreen_time_interval_time"
+        android:layout_alignEnd="@+id/overlayscreen_time_interval_bg"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="96dp"
+        android:background="@drawable/bottomnav_circle_ripple"
+        android:src="@drawable/overlayscreen_time_interval_done" />
+</RelativeLayout>

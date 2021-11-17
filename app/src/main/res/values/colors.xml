@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="autoshot_bg">#6fcf97</color>
+
+    <color name="black">#ff000000</color>
+
+    <color name="homescreen_bottomnav_active">#ff000000</color>
+    <color name="homescreen_bottomnav_inactive">#747474</color>
+    <color name="homescreen_rv_item_bg_color">#56ccf2</color>
+    <color name="checkbox_color">#ff000000</color>
+
+    <color name="purple_200">#ffbb86fc</color>
+    <color name="purple_500">#ff6200ee</color>
+    <color name="purple_700">#ff3700b3</color>
+
+    <color name="ssfoldscreen_imgitem_num_color">#ffffffff</color>
+    <color name="ssfoldscreen_imgitem_num_icon_bg_color">#e76e54</color>
+
+    <color name="teal_200">#ff03dac5</color>
+    <color name="teal_700">#ff018786</color>
+
+    <color name="white">#ffffffff</color>
+</resources>

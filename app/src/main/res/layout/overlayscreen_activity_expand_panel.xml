@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/overlayscreen_expand_panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/overlayscreen_expand_panel_bg"
+        android:layout_width="@dimen/overlayscreen_expand_panel_bg_size"
+        android:layout_height="@dimen/overlayscreen_expand_panel_bg_size"
+        android:background="@drawable/bottomnav_circle_ripple"
+        android:scaleType="fitXY"
+        android:src="@drawable/overlayscreen_main_button_bg" />
+
+    <TextView
+        android:id="@+id/overlayscreen_expand_panel_no_of_ss_tv"
+        style="@style/homescreen_cap_item_subheader_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/overlayscreen_expand_panel_bg"
+        android:layout_alignTop="@+id/overlayscreen_expand_panel_bg"
+        android:layout_alignEnd="@+id/overlayscreen_expand_panel_bg"
+        android:layout_alignBottom="@+id/overlayscreen_expand_panel_bg"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:text="12" />
+
+    <ImageButton
+        android:id="@+id/overlayscreen_expand_panel_time_interval"
+        android:layout_width="@dimen/overlayscreen_expand_panel_icon_size"
+        android:layout_height="@dimen/overlayscreen_expand_panel_icon_size"
+        android:layout_alignStart="@+id/overlayscreen_expand_panel_bg"
+        android:layout_alignTop="@+id/overlayscreen_expand_panel_bg"
+        android:layout_marginStart="@dimen/overlayscreen_expand_panel_top_icon_margin_horizontal"
+        android:layout_marginTop="@dimen/overlayscreen_expand_panel_icon_margin"
+        android:background="@drawable/bottomnav_circle_ripple"
+        android:scaleType="fitXY"
+        android:src="@drawable/overlayscreen_expand_panel_time_interval_change" />
+
+    <ImageButton
+        android:id="@+id/overlayscreen_expand_panel_stop"
+        android:layout_width="@dimen/overlayscreen_expand_panel_icon_size"
+        android:layout_height="@dimen/overlayscreen_expand_panel_icon_size"
+        android:layout_alignStart="@+id/overlayscreen_expand_panel_bg"
+        android:layout_alignTop="@+id/overlayscreen_expand_panel_bg"
+        android:layout_marginStart="@dimen/overlayscreen_expand_panel_icon_margin"
+        android:layout_marginTop="@dimen/overlayscreen_expand_panel_mid_icon_margin_vertical"
+        android:background="@drawable/bottomnav_circle_ripple"
+        android:src="@drawable/overlayscreen_expand_panel_stop" />
+
+    <ImageButton
+        android:id="@+id/overlayscreen_expand_panel_pause"
+        android:layout_width="@dimen/overlayscreen_expand_panel_icon_size"
+        android:layout_height="@dimen/overlayscreen_expand_panel_icon_size"
+        android:layout_alignTop="@+id/overlayscreen_expand_panel_bg"
+        android:layout_alignEnd="@+id/overlayscreen_expand_panel_bg"
+        android:layout_marginTop="@dimen/overlayscreen_expand_panel_mid_icon_margin_vertical"
+        android:layout_marginEnd="@dimen/overlayscreen_expand_panel_icon_margin"
+        android:background="@drawable/bottomnav_circle_ripple"
+        android:src="@drawable/overlayscreen_expand_panel_pause" />
+
+    <ImageButton
+        android:id="@+id/overlayscreen_expand_panel_reduce"
+        android:layout_width="@dimen/overlayscreen_expand_panel_icon_size"
+        android:layout_height="@dimen/overlayscreen_expand_panel_icon_size"
+        android:layout_alignStart="@+id/overlayscreen_expand_panel_bg"
+        android:layout_alignBottom="@+id/overlayscreen_expand_panel_bg"
+        android:layout_marginStart="@dimen/overlayscreen_expand_panel_top_icon_margin_horizontal"
+        android:layout_marginBottom="@dimen/overlayscreen_expand_panel_icon_margin"
+        android:background="@drawable/bottomnav_circle_ripple"
+        android:src="@drawable/overlayscreen_expand_panel_reduce" />
+
+    <ImageButton
+        android:id="@+id/overlayscreen_expand_panel_play"
+        android:layout_width="@dimen/overlayscreen_expand_panel_icon_size"
+        android:layout_height="@dimen/overlayscreen_expand_panel_icon_size"
+        android:layout_alignTop="@+id/overlayscreen_expand_panel_bg"
+        android:layout_alignEnd="@+id/overlayscreen_expand_panel_bg"
+        android:layout_marginTop="@dimen/overlayscreen_expand_panel_mid_icon_margin_vertical"
+        android:layout_marginEnd="@dimen/overlayscreen_expand_panel_icon_margin"
+        android:background="@drawable/bottomnav_circle_ripple"
+        android:src="@drawable/overlayscreen_expand_panel_play"
+        android:visibility="invisible" />
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/overlayscreen_preview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/overlayscreen_preview_bg"
+        android:layout_width="@dimen/ssfoldsreen_width_height"
+        android:layout_height="@dimen/ssfoldsreen_width_height"
+        android:src="@drawable/homescreen_rv_item_bg" />
+
+    <ImageView
+        android:id="@+id/overlayscreen_preview_show"
+        android:layout_width="@dimen/ssfoldsreen_width_height"
+        android:layout_height="@dimen/ssfoldsreen_width_height"
+        android:layout_alignStart="@+id/overlayscreen_preview_bg"
+        android:layout_alignTop="@+id/overlayscreen_preview_bg"
+        android:layout_alignEnd="@+id/overlayscreen_preview_bg"
+        android:layout_alignBottom="@+id/overlayscreen_preview_bg"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_placeholder" />
+</RelativeLayout>
