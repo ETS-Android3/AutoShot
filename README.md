@@ -11,3 +11,4 @@ Not only the app can take screenshots but also it has more features:
 4. all your pdfs are also stored in an organized way & what's more is that you can view from the app itself.
 
 Download the app from here: https://play.google.com/store/apps/details?id=com.infernodevelopers.autoshot
+![image](https://user-images.githubusercontent.com/40053959/164436944-a9cb1270-4271-4b0e-ba17-607f09bbb89d.png)
